@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Gabriel Gutierrez</a>
+        </div>
+
+       
+      </div>
+
+      <div class="right-side">
+        <div class="brand" style="color: white;">
+          Year Of The Horse
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/flower.gif);"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2021 <br>
+                The year of the
+                "Confusion"
+
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/change.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2022 <br>
+                The year of the
+                "Change"
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/dbz.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle"> 2023 <br>
+                
+                <!-- What would you call this year? -->
+                The year of "Hope" </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/spirit-bomb.gif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+             2024 <br>
+             The year of "Growth"
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/delorean.gif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2025 <br>
+                The year of a "New Journey"
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(graduation.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2026 <br>
+                The year of a "Success Story"
+
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/bleach-ending.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2027 <br>
+                The year of "Happiness"
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/dad.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2032 <br>
+                The year of a "New Dad"
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/naruto2.gif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2037 <br>
+                The year of a "New Leader"
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/reflection.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2042 <br>
+                The year of "Reflection" 
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/stinkmeaner.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2047 <br>
+                The year of a "Retired Old Man"
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(/blade-runner.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">
+                2052 <br>
+                The year of "New Beginnings"
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+<!--JS code usually found at bottom of the page because dont want to run before anything else-->
+<!--<script> is used to implement JS-->
+<script>
+  //const will create a variable called "portfolioItems"//
+  //document.querySelectorAll() - will find all documents that have the selector, so in this case ".portfolio-item-wrapper"//
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  //add an event listener. .forEach takes a function. A function is just a process that runs. Want to run process for each one of portfolioItems//
+  portfolioItems.forEach(portfolioItem => {
+    //=> { basically means everthing within => {} everytime the page load is going to be ran
+    portfolioItem.addEventListener('mouseover', () => {
+      //"mouseover" is synonymous to :hover
+      //console.log will log the value out (noting) it
+      //childNodes = nested divs
+      console.log(portfolioItem.childNodes[1].classList)
+      //will implement css to blur img out whne hovering over
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+      //need 1 more even listener to undo mouseover when cursor is no longer hovering over. This would be mouseout
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

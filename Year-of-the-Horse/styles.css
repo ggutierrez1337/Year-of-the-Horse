@@ -1,0 +1,134 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  
+  .left-side {
+    display: flex;
+  }
+
+  
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+  
+  .active-nav-link {
+    border-bottom: 1px solid white;
+  }
+  
+  .active-nav-link a {
+    color: white !important;
+  }
+  
+  .nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  
+  .nav-link-wrapper:hover {
+    border-bottom: 1px solid gray;
+  }
+  
+  .nav-link-wrapper a:hover {
+    color: black;
+  }
+  
+  
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .portfolio-item-wrapper {
+    position: relative; /*position:relative is required if you want to have any position:absolute elements nested inside of it.*/
+  }
+  
+  .portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 430px;
+    width: 100%;
+  }
+  
+  /*Position HTML on top of other div*/
+  .img-text-wrapper {
+    position: absolute; /*positioned at the very top*/
+    top: 0;
+    display: flex;      /*inside, all of elements will use flex box*/
+    flex-direction: column;
+    justify-content: center; /*left to right*/
+    align-items: center;     /*Top to bottom*/
+    height: 100%;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+  }
+  
+  .img-text-wrapper .subtitle { /*How th text will look before actucally hovering over it, so it'll be transparent before .img-text-wrapper:hover .subtitle is implemented*/
+    transition: 1s;
+    color: transparent;
+    
+  }
+  
+  .image-blur { /*darkens the img*/
+    transition: 1s;
+    filter: brightness(10%);
+  }
+  
+  .img-text-wrapper:hover .subtitle { /* edit img subtitles*/
+    color: pink;           /*Only turns green when hovering over*/
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  .logo-wrapper img { 
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .two-column-wrapper { /*Will turn my about page into 2 rows*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .profile-image-wrapper img {
+    width: 100%;
+  }
+  
+  .profile-content-wrapper {
+    padding: 30px;
+  }
+  
+  .profile-content-wrapper h1 {
+    background: linear-gradient(#000046, #1cb5e0);
+    font-size: 25px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
